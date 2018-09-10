@@ -9,7 +9,7 @@ BoxVisualization::BoxVisualization() {
   h = 11*GRID_SIZE;
   setDelay(0);
 
-  waves = Waves();
+  Waves waves;
   waves.setPos(ofPoint(285,375));
   
   tline1.w = w;

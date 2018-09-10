@@ -10,11 +10,11 @@ void ofApp::setup() {
   layout = Layout();
   
   // Position components, set delays for animation
-  left = Left();
+  Left left;
   left.setPos(165,165);
   left.setDelay(-50);
 
-  right = Right();
+  Right right;
   right.setPos(101*GRID_SIZE,165);
   right.setDelay(-50);
 

@@ -46,7 +46,7 @@ Waves::Waves() {
 
   camDist = 2400;
   view = ofPoint(0,0);
-  easyCam = ofEasyCam();
+  ofEasyCam easyCam;
   easyCam.setTarget(ofVec3f(0,0,0));
   easyCam.setDistance(camDist);
   easyCam.disableMouseInput();
@@ -113,7 +113,7 @@ void Waves::update() {
   // Update displacement texture
   float coord_scale = 1/30.0;
   float time_scale = 1/150.0;
-  unsigned char *pixels = displacementTexture.getPixels();
+  unsigned char *pixels = displacementTexture.getPixels().getData();
   for (int y = 0; y < texh; y++) {
     for (int x = 0; x < getUpdatePosition(); x++) {
       int i = y * texw + x;

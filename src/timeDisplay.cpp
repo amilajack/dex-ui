@@ -63,7 +63,7 @@ TimeDisplay::TimeDisplay() {
   
   string upperStrings[4] = {year_s, "UPTIME", "SYSTEM", "V"};
   string lowerStrings[4] = {mon_s, uptime_s, "ONLINE", "0.1b"};
-  int xpositions[4] = {0.0+inset, 4*GRID_SIZE+inset, 9*GRID_SIZE+inset, 14*GRID_SIZE+inset};
+  int xpositions[4] = {0+inset, 4*GRID_SIZE+inset, 9*GRID_SIZE+inset, 14*GRID_SIZE+inset};
   
   // Upper
   for (int i = 0; i < 4; i++) {

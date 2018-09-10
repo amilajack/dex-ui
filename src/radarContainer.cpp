@@ -9,7 +9,7 @@ RadarContainer::RadarContainer() {
   h = 21*GRID_SIZE;
   abs_p = ofPoint(1515, 195);
   
-  radar1 = Radar();
+  Radar radar1;
   radar1.x = abs_p.x;
   radar1.y = abs_p.y+1*GRID_SIZE;
   radar1.w = w;
@@ -18,7 +18,7 @@ RadarContainer::RadarContainer() {
   radar1.absolute_center = ofPoint(radar1.x+w/2, radar1.y+(12*GRID_SIZE)/2);
   radar1.set_theta_rate(1/230.0);
   
-  radar2 = Radar();
+  Radar radar2;
   radar2.x = abs_p.x;
   radar2.y = abs_p.y+14*GRID_SIZE;
   radar2.w = w/2;
@@ -27,7 +27,7 @@ RadarContainer::RadarContainer() {
   radar2.absolute_center = ofPoint(radar2.x+w/2/2, radar2.y+(6*GRID_SIZE)/2);
   radar2.set_theta_rate(1/150.0);
   
-  radar3 = Radar();
+  Radar radar3;
   radar3.x = abs_p.x+w/2;
   radar3.y = abs_p.y+14*GRID_SIZE;
   radar3.w = w/2;

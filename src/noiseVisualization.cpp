@@ -55,7 +55,7 @@ void NoiseVisualization::update() {
   // Update every 5 frames, but wait until frame 100 in intro
   if ((int)t % 5 == 0 && (currentEvent.id != 0 || getTime() > 100)) {
     // Updating code
-    unsigned char *pixels = displacementTexture.getPixels();
+    unsigned char *pixels = displacementTexture.getPixels().getData();
     for (int y = 0; y < texh; y+=5) {
       int i = y * texw + update_x;
       float n = ofNoise((noise_off+y)/50,(noise_off+update_x)/50);
@@ -129,7 +129,7 @@ void NoiseVisualization::initTexture(int descalar) {
   texh = noise_h/descalar;
   displacementTexture.allocate(texw, texh, OF_IMAGE_GRAYSCALE);
   
-  unsigned char *pixels = displacementTexture.getPixels();
+  unsigned char *pixels = displacementTexture.getPixels().getData();
   memset(pixels, 0, texw*texh);
   
   /*for (int y = 0; y < texh; y+=5) {

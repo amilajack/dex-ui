@@ -41,7 +41,7 @@ Radar::Radar() {
 
   init_aframe();
   
-  cam = ofEasyCam();
+  ofEasyCam cam;
   cam.setTarget(ofVec3f(0,0,0));
   cam.setDistance(600);
   

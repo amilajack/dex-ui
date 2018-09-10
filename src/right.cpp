@@ -13,7 +13,7 @@ Right::Right() {
   header.ur_text = "ALT PANEL";
   header.line.duration = 50;
   
-  radar = RadarContainer();
+  RadarContainer radar;
   radar.setPos(0,2*GRID_SIZE);
   
   sg.setPos(0,32*GRID_SIZE);
