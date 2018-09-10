@@ -1,11 +1,11 @@
 #pragma once
 
 #include "ofMain.h"
-#include "layout.h"
-#include "left.h"
-#include "right.h"
-#include "term.h"
-#include "keyboard.h"
+// #include "layout.h"
+// #include "left.h"
+// #include "right.h"
+// #include "term.h"
+// #include "keyboard.h"
 
 #define X_OFFSET 0
 #define Y_OFFSET 0
@@ -26,14 +26,14 @@ public:
   void dragEvent(ofDragInfo dragInfo);
   void gotMessage(ofMessage msg);
 		
-  bool isRecording;
-  bool isDrawing;
-  int recordFrameCounter;
-  int recordMaxFrames;
+  // bool isRecording;
+  // bool isDrawing;
+  // int recordFrameCounter;
+  // int recordMaxFrames;
   
-  Layout layout;
-  Left left;
-  Right right;
-  Term term;
-  Keyboard keyboard;
+  // Layout layout;
+  // Left left;
+  // Right right;
+  // Term term;
+  // Keyboard keyboard;
 };
